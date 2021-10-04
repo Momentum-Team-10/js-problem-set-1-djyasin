@@ -45,6 +45,11 @@ function fahrenheitToCelsius (temperature) {
 // 7. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
+function celsiusToFahrenheit (temperature) {
+    
+    return (temperature * 1.8) + (32);
+
+}
 
 // 8. Create a function called fahrenheitToKelvin that takes a
 // Fahrenheit temperature as an argument and returns the
