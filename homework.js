@@ -79,11 +79,17 @@ return number2;
 // fr - Bonjour, <name>!
 // eo - Saluton, <name>!
 
-function greeting(name) {
-    return "Hello, " + name + "!";
+function multigreeting (name, language) {
+    if (language === 'en')
+    {
+        return "hello," + name + "!";
+    }
+if (language === "fr")
+{
+return "Bonjour," + name +"!";
 }
-//
-// If any other language code is used, return nothing.
+}
+    // If any other language code is used, return nothing.
 
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
 // is the largest integer that, given two other integers, can be divided into them. For
