@@ -45,10 +45,8 @@ function fahrenheitToCelsius (temperature) {
 // 7. Create a function called celsiusToFahrenheit that takes a
 // Celsius temperature as an argument and returns the
 // temperature in Fahrenheit.
-function celsiusToFahrenheit (temperature) {
-    
+function celsiusToFahrenheit (temperature) {  
     return (temperature * 1.8) + (32);
-
 }
 
 // 8. Create a function called fahrenheitToKelvin that takes a
@@ -58,9 +56,18 @@ function celsiusToFahrenheit (temperature) {
 // Absolute zero (0 K) is equivalent to −273.15 C.
 // 1 degree Kelvin equals 1 degree Celsius.
 
+function fahrenheitToKelvin(temperature) {
+    return fahrenheitToCelsius(temperature) + 273.15;
+}
 // 9. Create a function called lesser that takes two numbers as
 // arguments and returns the lesser of them. This function should
 // use an if/else statement.
+function lesser (number1, number2){
+    if (number1 < number2) {
+return number1; } else {
+return number2;
+}
+}
 
 // 10. Create a function called multigreeting that takes a name
 // and a language code and returns a version of "Hello, <name>!"
@@ -71,6 +78,10 @@ function celsiusToFahrenheit (temperature) {
 // es - ¡Hola, <name>!
 // fr - Bonjour, <name>!
 // eo - Saluton, <name>!
+
+function greeting(name) {
+    return "Hello, " + name + "!";
+}
 //
 // If any other language code is used, return nothing.
 
