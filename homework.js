@@ -129,3 +129,16 @@ let multigreeting = (name, lang) => {
 
 // Write a function called gcd that takes two arguments and returns the greatest common
 // divisor using the instructions above.
+function gcd (num1, num2) {
+        let d = 0
+    if (num1 % 2 === 0 && num2 % 2 === 0) {
+       const  a = num1 / 2
+       const  b = num2 / 2
+       d = d + 1
+    }
+while (a!= b) {
+  if ( )  {
+
+  } else if ()
+}
+}
