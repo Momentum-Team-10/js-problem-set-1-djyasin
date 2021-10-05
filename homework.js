@@ -1,16 +1,24 @@
 // 1. Set the variable `givenName` to the string "Addison".
 const givenName = 'Addison'
 
+    //REVIEW:
+        //can use const, var, or let to declare a statement .
+        // Var is how we used to declare variables. Now we use let or const.
+
 // 2. Set candies equal to 20, people to 6, and leftover equal
 // to the remainder of dividing 20 by 6.
 
 const candies = "20"; const people = "6";  const leftover = 20 % 6;
+
+//REVIEW:
+    //
 
 // 3. Create a function called greeting that returns "Hello, <name>!",
 // where <name> is the name given as an argument to the function.
 function greeting(name) {
     return "Hello, " + name + "!";
 }
+//Adding strings together is called concatination
 
 // 4. Create a function called isOdd that, given a number, will
 // return true if it is odd and false if it is not. An odd number is a
@@ -24,7 +32,7 @@ function isOdd(number) {
 }
 
 // 5. Create a function called isEven that, given a number, will
-// return true if it is even and false if it is not. An even number is a
+// return true if it is even and fa            lse if it is not. An even number is a
 // number which, when divided by 2, has a remainder of 0.
 function isEven(number) {
     if (number % 2 === 0 || number % 2 === -2) {
@@ -79,16 +87,20 @@ return number2;
 // fr - Bonjour, <name>!
 // eo - Saluton, <name>!
 
-function multigreeting (name, language) {
-    if (language === 'en')
-    {
-        return "hello," + name + "!";
+let multigreeting = (name, lang) => {
+    if (lang === "en") {
+        return "Hello, " + name + "!";
+    } else if (lang === "es") {
+        return "¡Hola, " + name + "!";
+    } else if (lang === "fr") {
+        return "Bonjour, " + name + "!";
+    } else if (lang === "eo") {
+        return "Saluton, " + name + "!";
+    } else {
+        return
     }
-if (language === "fr")
-{
-return "Bonjour," + name +"!";
 }
-}
+
     // If any other language code is used, return nothing.
 
 // 11. The greatest common divisor (https://en.wikipedia.org/wiki/Greatest_common_divisor)
